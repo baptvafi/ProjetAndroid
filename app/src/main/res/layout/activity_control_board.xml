@@ -4,58 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".controlBoard">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="61dp"
-        android:layout_height="70dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="132dp"
-        tools:srcCompat="@tools:sample/avatars" />
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="202dp" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="175dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="68dp"
-        android:layout_height="49dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="165dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="63dp"
-        android:layout_height="51dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="165dp" />
-
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="156dp"
-        android:layout_height="46dp"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="675dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

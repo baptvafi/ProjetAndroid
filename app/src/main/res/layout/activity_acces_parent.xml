@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".accesParent">
@@ -10,25 +11,47 @@
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
         android:ems="10"
+        android:hint="password"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="323dp" />
+        android:textColor="#000000"
+        android:textColorHighlight="#03A9F4"
+        android:textColorHint="#737373"
+        android:textColorLink="#03A9F4"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
 
     <TextView
         android:id="@+id/login"
         android:layout_width="194dp"
         android:layout_height="52dp"
-        android:text="@string/login"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="227dp" />
+        android:gravity="center"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
 
     <Button
         android:id="@+id/confirm_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/confirm"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="402dp" />
+        android:backgroundTint="#3F51B5"
+        android:text="confirm"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

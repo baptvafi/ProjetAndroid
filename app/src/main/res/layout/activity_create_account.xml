@@ -4,47 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".createAccount">
 
     <Button
         android:id="@+id/create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/create"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="473dp" />
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#3F51B5"
+        android:text="create"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password1"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/password1"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#03A9F4"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="382dp" />
+        android:shadowColor="#85FFFFFF"
+        android:shadowDx="5000"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/password2"
+        style="@style/Widget.AppCompat.EditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="259dp" />
+        android:textColor="#000000"
+        android:textColorHighlight="#2196F3"
+        android:textColorHint="#FF0000"
+        android:textColorLink="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_password"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/set_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/set_password"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="202dp" />
+        android:autoText="true"
+        android:background="#00E80F0F"
+        android:backgroundTint="#00EF0000"
+        android:text="Entrez votre mot de passe"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/confirm_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/confirm_password"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="356dp" />
+        android:text="Confirmer votre mot de passe"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
