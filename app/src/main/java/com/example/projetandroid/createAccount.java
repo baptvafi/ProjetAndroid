@@ -42,6 +42,8 @@ public class createAccount extends AppCompatActivity implements View.OnClickList
     public void onClick(View view){
         // if both passwords same: record password, change activity to login
 
+
+
         if(password1.getText().toString().equals("")){
             Toast toast = Toast.makeText(getApplicationContext(),"Le mot de passe ne peut pas" +
                     " être vide", Toast.LENGTH_SHORT);
