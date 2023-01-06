@@ -14,6 +14,10 @@ import java.io.File;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
+import pops.peip2.myapplication.R;
+
+
+
 public class createAccount extends AppCompatActivity implements View.OnClickListener{
     public Button CreateButton;
     public EditText password1;
